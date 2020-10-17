@@ -1,0 +1,23 @@
+.header-container {
+    height: 50px;
+}
+
+.left-box {
+    width: 50%;
+    float: left;
+}
+
+.right-box {
+    width: 50%;
+    float: right;
+}
+
+.title {
+    font-size: 36px;
+    font-family: 'Open Sans';
+    color: rgb(0, 169, 224);
+}
+
+.text-right {
+    text-align: right;
+}

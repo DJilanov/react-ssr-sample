@@ -1,21 +1,68 @@
 body {
-  font-family: Arimo, 'sans-serif';
+  font-family: 'Open Sans';
   font-size: 14px;
 }
 
-.link {
-    padding: 8px 10px;
-    border-radius: 3px;
-}
-
-.link:hover {
-    background: rgba(0, 0, 0, .1);
-}
-
 .wrapper {
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  padding: 5px 20px;
-  border-radius: 2px;
-  margin-top: 20px;
-  background: rgba(128, 128, 128, .1);
+  max-width: 1920px;
+  margin: auto;
+  padding-top: 20px;
+}
+
+
+
+/* Locking the container for all standard device widths ( it is done in the same way in non flex Bootstrap and Material */
+
+@media (max-width: 450px) {
+  .wrapper {
+    width: 375px;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 640px) {
+  .wrapper {
+    width: 450px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 780px) {
+  .wrapper {
+    width: 640px;
+  }
+}
+
+@media (min-width: 781px) and (max-width: 960px) {
+  .wrapper {
+    width: 780px;
+  }
+}
+
+@media (min-width: 961px) and (max-width: 1024px) {
+  .wrapper {
+    width: 960px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .wrapper {
+    width: 1024px;
+  }
+}
+
+@media (min-width: 1281px) and (max-width: 1440px) {
+  .wrapper {
+    width: 1280px;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 1680px) {
+  .wrapper {
+    width: 1440px;
+  }
+}
+
+@media (min-width: 1681px) and (max-width: 1920px) {
+  .wrapper {
+    width: 1680px;
+  }
 }

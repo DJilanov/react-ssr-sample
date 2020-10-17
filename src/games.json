@@ -1,0 +1,112 @@
+[
+    {
+        "title": "Hotline",
+        "image": "/assets/games/hotline.jpg",
+        "big": false
+    },
+    {
+        "title": "Neon Jungle",
+        "image": "/assets/games/neon-jungle.jpg",
+        "big": false
+    },
+    {
+        "title": "3 hit pay",
+        "image": "/assets/games/3hit-pay.jpg",
+        "big": true
+    },
+    {
+        "title": "Day of the Dead",
+        "image": "/assets/games/day-of-the-dead.jpg",
+        "big": false
+    },
+    {
+        "title": "Dr Jekyll vs Hyde",
+        "image": "/assets/games/dr-jekyll.jpg",
+        "big": false
+    },
+    {
+        "title": "Day of the Dead",
+        "image": "/assets/games/day-of-the-dead.jpg",
+        "big": false
+    },
+    {
+        "title": "Sea of Tranquility",
+        "image": "/assets/games/sea-of-tranquility.jpg",
+        "big": false
+    },
+    {
+        "title": "Aloha",
+        "image": "/assets/games/aloha.jpg",
+        "big": false
+    },
+    {
+        "title": "Dr Jekyll vs Hyde",
+        "image": "/assets/games/dr-jekyll.jpg",
+        "big": false
+    },
+    {
+        "title": "Day of the Dead",
+        "image": "/assets/games/day-of-the-dead.jpg",
+        "big": false
+    },
+    {
+        "title": "Dr Jekyll vs Hyde",
+        "image": "/assets/games/dr-jekyll.jpg",
+        "big": false
+    },
+    {
+        "title": "Fruit Spin",
+        "image": "/assets/games/fruit-spin.jpg",
+        "big": false
+    },
+    {
+        "title": "Jack Hammer",
+        "image": "/assets/games/jack-hammer.jpg",
+        "big": false
+    },
+    {
+        "title": "Spinata Grande",
+        "image": "/assets/games/spinata-grande.jpg",
+        "big": false
+    },
+    {
+        "title": "Sugar Smash",
+        "image": "/assets/games/sugar-smash.jpg",
+        "big": false
+    },
+    {
+        "title": "Jumanji",
+        "image": "/assets/games/jumanji.jpg",
+        "big": true
+    },
+    {
+        "title": "Fa Fa Twins",
+        "image": "/assets/games/fafa-twins.jpg",
+        "big": false
+    },
+    {
+        "title": "Smokin Hot Gems",
+        "image": "/assets/games/hot-gems.jpg",
+        "big": false
+    },
+    {
+        "title": "Gonzo's Quest",
+        "image": "/assets/games/gonzos-quest.jpg",
+        "big": false
+    },
+    {
+        "title": "Hotline",
+        "image": "/assets/games/hotline.jpg",
+        "big": false
+    },
+    {
+        "title": "Fruit Spin",
+        "image": "/assets/games/fruit-spin.jpg",
+        "big": false
+    },
+    {
+        "title": "Spinata Grande",
+        "image": "/assets/games/spinata-grande.jpg",
+        "big": false
+    }
+]

@@ -1,24 +1,23 @@
-import React from "react";
-import { connect } from "react-redux";
-import { fetchData } from "../store";
+import React from 'react';
+import { connect } from 'react-redux';
+import { fetchData } from '../store';
 
 class Home extends React.Component {
     componentDidMount( ) {
-        if ( this.props.circuits.length <= 0 ) {
+        if ( this.props.games.length <= 0 ) {
             this.props.fetchData( );
         }
     }
 
     render( ) {
-        const { circuits } = this.props;
+        const { games } = this.props;
 
         return (
-            <div className="wrapper">
-                <h2>F1 2018 Season Calendar</h2>
+            <div>
                 <ul>
-                    { circuits.map( ( { circuitId, circuitName, Location } ) => (
+                    {/* { games.map( ( { circuitId, circuitName, Location } ) => (
                         <li key={ circuitId } >{ circuitName } - { Location.locality }, { Location.country }</li>
-                    ) ) }
+                    ) ) } */}
                 </ul>
             </div>
         );
@@ -27,7 +26,7 @@ class Home extends React.Component {
 Home.serverFetch = fetchData; // static declaration of data requirements
 
 const mapStateToProps = ( state ) => ( {
-    circuits: state.data,
+    games: state.data,
 } );
 
 const mapDispatchToProps = {

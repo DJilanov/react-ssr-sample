@@ -1,13 +1,12 @@
-import fetch from "isomorphic-fetch";
+import fetch from 'isomorphic-fetch';
 
-export function fetchCircuits( ) {
-    return fetch( "http://ergast.com/api/f1/2018/circuits.json" )
-        .then( res => res.json( ) )
-        .then( res => res.MRData.CircuitTable.Circuits );
+const API_URL = 'http://localhost:2048'
+
+export function getApiUrl( ) {
+    return API_URL;
 }
 
-export function fetchItems( ) {
-    return fetch( "http://ergast.com/api/f1/2018/circuits.json" )
-        .then( res => res.json( ) )
-        .then( res => res.MRData.CircuitTable.Circuits );
+export function fetchItems( searchString = '' ) {
+    return fetch( `${API_URL}/api/games?search=${searchString}` )
+        .then( res => res.json( ) );
 }
