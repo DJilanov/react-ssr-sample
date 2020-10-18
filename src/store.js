@@ -28,6 +28,10 @@ export const fetchData = ( dispatch, string ) => {
     fetchItems( string ).then( res => dispatch( storeData( res ) ) );
 }
 
+export const filterData = ( dispatch, filter ) => {
+    fetchItems( '', filter ).then( res => dispatch( storeData( res ) ) );
+}
+
 const filterReducer = ( state = false, action ) => {
     switch ( action.type ) {
         case 'SET_FILTER':

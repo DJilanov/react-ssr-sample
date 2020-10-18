@@ -5,6 +5,7 @@
     padding: 10px;
     border: 1px solid gray;
     position: relative;
+    margin-right: 15px;
 }
 
 .search-container:hover > .search-txt{

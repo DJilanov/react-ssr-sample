@@ -21,7 +21,9 @@ app.use( '/assets/', express.static( path.join( __dirname, '/../assets/' ) ) );
 // Handle data serving
 app.get( '/api/games', ( req, res ) => {
     if ( req.query.search && req.query.search.length > 0 ) {
-        res.json( games.filter( ( el ) => el.title.includes( req.query.search ) ) );
+        res.json( games.filter( ( el ) => el.title.toLowerCase().includes( req.query.search.toLowerCase() ) ) );
+    } else if ( req.query.filter && req.query.filter.length > 0 && req.query.filter !== 'ALL') {
+        res.json( games.filter( ( el ) => el[req.query.filter.toLowerCase()] ) );
     } else {
         res.json( games );
     }
@@ -29,7 +31,9 @@ app.get( '/api/games', ( req, res ) => {
 // Handle SSR
 app.get( '/*', ( req, res ) => {
     const context = { };
-    const store = createStore( );
+    const store = createStore( {
+        activeFilter: 'ALL'
+    } );
 
     store.dispatch( initializeSession( ) );
 

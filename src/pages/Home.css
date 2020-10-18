@@ -1,0 +1,29 @@
+.home-container {
+    margin-left: -10px;
+    margin-right: -10px;
+    display: inline-block;
+    width: 100%;
+}
+
+.home-group {
+    width: 28.57%;
+    display: inline-block;
+}
+
+.home-group.big {
+    width: 28.57%;
+    display: inline-block;
+}
+
+.home-group.half {
+    width: 14.28%;
+    display: inline-block;
+}
+  
+@media (max-width: 1024px) {
+    .home-group,
+    .home-group.big {
+        width: 50%;
+        display: inline-block;
+    }
+}

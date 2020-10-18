@@ -7,6 +7,7 @@ import './Header.css';
 export default function Header( props ) {
     const handleIconClick = (event) => {
         props.onFilter(event);
+        props.filterData(event);
     }
     const handleSearchClick = (event) => {
         props.fetchData(event);
@@ -18,7 +19,7 @@ export default function Header( props ) {
             </div>
             <div className="right-box text-right">
                 <div className="controlls-container">
-                    <Icon onClick={handleIconClick.bind(this)} title="ALL" iconLink="/assets/icons/ico_all.svg" active={ props.activeFilter === 'ALL' } />
+                    <Icon onClick={handleIconClick.bind(this)} title="ALL" iconLink="/assets/icons/ico_all.svg" active={ props.activeFilter === 'ALL' || !props.activeFilter } />
                     <Icon onClick={handleIconClick.bind(this)} title="NEW" iconLink="/assets/icons/ico_new.svg" active={ props.activeFilter === 'NEW' } />
                     <Icon onClick={handleIconClick.bind(this)} title="TOP" iconLink="/assets/icons/ico_top.svg" active={ props.activeFilter === 'TOP' } />
                 </div>
@@ -31,5 +32,6 @@ export default function Header( props ) {
 Header.proptypes = {
     activeFilter: PropTypes.string,
     fetchData: PropTypes.func,
+    filterData: PropTypes.func,
     onFilter: PropTypes.func,
 }

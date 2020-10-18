@@ -1,0 +1,32 @@
+.box-container {
+    padding: 1%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    width: 47%;
+    display: inline-block;
+}
+
+.big .box-container {
+    padding: 0.5%;
+    width: 99%;
+    display: inline-block;
+}
+
+.half .box-container {
+    padding: 3%;
+    padding-top: 3.5%;
+    padding-bottom: 0.5%;
+    width: 94%;
+    display: inline-block;
+}
+
+.box-container img {
+    display: inline-block;
+    width: 100%;
+}
+
+.big .box-container img {
+    padding-left: 1%;
+    width: 98%;
+    display: inline-block;
+}

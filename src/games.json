@@ -2,7 +2,9 @@
     {
         "title": "Hotline",
         "image": "/assets/games/hotline.jpg",
-        "big": false
+        "big": false,
+        "new": true,
+        "top": true
     },
     {
         "title": "Neon Jungle",
@@ -10,34 +12,36 @@
         "big": false
     },
     {
-        "title": "3 hit pay",
-        "image": "/assets/games/3hit-pay.jpg",
-        "big": true
-    },
-    {
-        "title": "Day of the Dead",
-        "image": "/assets/games/day-of-the-dead.jpg",
-        "big": false
-    },
-    {
-        "title": "Dr Jekyll vs Hyde",
-        "image": "/assets/games/dr-jekyll.jpg",
-        "big": false
-    },
-    {
-        "title": "Day of the Dead",
-        "image": "/assets/games/day-of-the-dead.jpg",
-        "big": false
-    },
-    {
         "title": "Sea of Tranquility",
         "image": "/assets/games/sea-of-tranquility.jpg",
-        "big": false
+        "big": false,
+        "new": true
     },
     {
         "title": "Aloha",
         "image": "/assets/games/aloha.jpg",
-        "big": false
+        "big": false,
+        "top": true
+    },
+
+    {
+        "title": "3 hit pay",
+        "image": "/assets/games/3hit-pay.jpg",
+        "big": true,
+        "new": true
+    },
+
+    {
+        "title": "Day of the Dead",
+        "image": "/assets/games/day-of-the-dead.jpg",
+        "big": false,
+        "top": true
+    },
+    {
+        "title": "Dr Jekyll vs Hyde",
+        "image": "/assets/games/dr-jekyll.jpg",
+        "big": false,
+        "new": true
     },
     {
         "title": "Dr Jekyll vs Hyde",
@@ -47,13 +51,10 @@
     {
         "title": "Day of the Dead",
         "image": "/assets/games/day-of-the-dead.jpg",
-        "big": false
+        "big": false,
+        "top": true
     },
-    {
-        "title": "Dr Jekyll vs Hyde",
-        "image": "/assets/games/dr-jekyll.jpg",
-        "big": false
-    },
+
     {
         "title": "Fruit Spin",
         "image": "/assets/games/fruit-spin.jpg",
@@ -62,26 +63,6 @@
     {
         "title": "Jack Hammer",
         "image": "/assets/games/jack-hammer.jpg",
-        "big": false
-    },
-    {
-        "title": "Spinata Grande",
-        "image": "/assets/games/spinata-grande.jpg",
-        "big": false
-    },
-    {
-        "title": "Sugar Smash",
-        "image": "/assets/games/sugar-smash.jpg",
-        "big": false
-    },
-    {
-        "title": "Jumanji",
-        "image": "/assets/games/jumanji.jpg",
-        "big": true
-    },
-    {
-        "title": "Fa Fa Twins",
-        "image": "/assets/games/fafa-twins.jpg",
         "big": false
     },
     {
@@ -94,6 +75,17 @@
         "image": "/assets/games/gonzos-quest.jpg",
         "big": false
     },
+
+    {
+        "title": "Spinata Grande",
+        "image": "/assets/games/spinata-grande.jpg",
+        "big": false
+    },
+    {
+        "title": "Sugar Smash",
+        "image": "/assets/games/sugar-smash.jpg",
+        "big": false
+    },
     {
         "title": "Hotline",
         "image": "/assets/games/hotline.jpg",
@@ -102,6 +94,28 @@
     {
         "title": "Fruit Spin",
         "image": "/assets/games/fruit-spin.jpg",
+        "big": false
+    },
+
+    {
+        "title": "Jumanji",
+        "image": "/assets/games/jumanji.jpg",
+        "big": true
+    },
+
+    {
+        "title": "Day of the Dead",
+        "image": "/assets/games/day-of-the-dead.jpg",
+        "big": false
+    },
+    {
+        "title": "Dr Jekyll vs Hyde",
+        "image": "/assets/games/dr-jekyll.jpg",
+        "big": false
+    },
+    {
+        "title": "Fa Fa Twins",
+        "image": "/assets/games/fafa-twins.jpg",
         "big": false
     },
     {
