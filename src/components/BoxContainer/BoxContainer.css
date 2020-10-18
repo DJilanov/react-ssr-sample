@@ -4,6 +4,7 @@
     padding-right: 1.5%;
     width: 47%;
     display: inline-block;
+    position: relative;
 }
 
 .big .box-container {
@@ -29,4 +30,48 @@
     padding-left: 1%;
     width: 98%;
     display: inline-block;
+}
+
+/* Image hover logic */
+
+.image-hover-text {
+  position: absolute;
+  top: 1%;
+  width: 95%;  
+  height: 96%;
+  margin: 0 auto;
+  opacity: 0;
+  cursor: default;
+  transition: opacity 0.2s linear;
+}
+
+.big + .image-hover-text {
+    top: 0;
+    width: 99%;  
+    height: 99%;
+}
+
+.image-hover-text:hover {
+  opacity: 1;
+}
+
+.image-hover-text-bubble {
+  position: relative;
+  box-sizing: border-box;
+  top: 0; left: 0; right: 100%;
+  height: 100%;
+  text-align: center;
+  background: rgba(218, 211, 211, 0.9);
+  border: 1px solid #848484;
+  margin: 0 auto;
+  padding: 25% 8px 5px 8px;
+  overflow: hidden;
+  font-size: 17px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.image-hover-text .image-hover-text-title {
+  font-size: 25px;
+  display: block;
 }

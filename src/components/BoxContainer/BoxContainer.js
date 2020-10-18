@@ -6,6 +6,11 @@ export default function BoxContainer( props ) {
     return (
         <div className="box-container">
             <img src={ props.image } className={props.big ? 'big' : ''} />
+            <div className="image-hover-text">
+                <div className="image-hover-text-bubble">
+                <span className="image-hover-text-title">{props.title}</span>
+                </div>
+            </div>
         </div>
     );
 }
