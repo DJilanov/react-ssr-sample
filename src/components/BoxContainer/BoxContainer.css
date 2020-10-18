@@ -32,6 +32,14 @@
     display: inline-block;
 }
 
+
+  
+@media (max-width: 1024px) {
+    .big .box-container {
+        width: 99.3%;
+    }
+}
+
 /* Image hover logic */
 
 .image-hover-text {
@@ -49,6 +57,12 @@
     top: 0;
     width: 99%;  
     height: 99%;
+}
+
+.half .image-hover-text {
+    top: 3%;
+    width: 95%;  
+    height: 95%;
 }
 
 .image-hover-text:hover {

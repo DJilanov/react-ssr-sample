@@ -3,12 +3,12 @@
 }
 
 .left-box {
-    width: 50%;
+    width: 20%;
     float: left;
 }
 
 .right-box {
-    width: 50%;
+    width: 80%;
     float: right;
 }
 
