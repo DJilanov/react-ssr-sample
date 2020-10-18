@@ -20,12 +20,12 @@ app.use( express.static( path.resolve( __dirname, '../dist' ) ) );
 app.use( '/assets/', express.static( path.join( __dirname, '/../assets/' ) ) );
 // Handle data serving
 app.get( '/api/games', ( req, res ) => {
-    if(req.query.search && req.query.search.length > 0) {
-        res.json(games.filter((el) => el.title.includes(req.query.search)));
+    if ( req.query.search && req.query.search.length > 0 ) {
+        res.json( games.filter( ( el ) => el.title.includes( req.query.search ) ) );
     } else {
-        res.json(games);
+        res.json( games );
     }
-});
+} );
 // Handle SSR
 app.get( '/*', ( req, res ) => {
     const context = { };

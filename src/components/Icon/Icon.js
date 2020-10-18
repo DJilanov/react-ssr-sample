@@ -2,14 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Icon.css';
 
-export default function Icon(props) {
+export default function Icon( props ) {
     return (
-        <div className="icon-container">
-            <div className="icon">
-                <span className="title"></span>
+        <div onClick={() => props.onClick(props.title)} className={`icon-container ${ props.active ? 'active' : '' }`}>
+            <div className="icon-image">
+                <img src={ props.iconLink } />
             </div>
-            <div className="text">
-                <span className="title">{props.title}</span>
+            <div className="icon-text">
+                <span>{ props.title }</span>
             </div>
         </div>
     );

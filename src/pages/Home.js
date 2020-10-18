@@ -5,12 +5,12 @@ import { fetchData } from '../store';
 class Home extends React.Component {
     componentDidMount( ) {
         if ( this.props.games.length <= 0 ) {
-            this.props.fetchData( );
+            this.props.fetchData( '' );
         }
     }
 
     render( ) {
-        const { games } = this.props;
+        // const { games } = this.props;
 
         return (
             <div>
@@ -29,8 +29,8 @@ const mapStateToProps = ( state ) => ( {
     games: state.data,
 } );
 
-const mapDispatchToProps = {
-    fetchData,
-};
+const mapDispatchToProps = (dispatch) => ({
+    fetchData: (data) => fetchData(dispatch, data),
+});
 
 export default connect( mapStateToProps, mapDispatchToProps )( Home );

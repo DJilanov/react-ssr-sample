@@ -6,18 +6,32 @@ export const initializeSession = ( ) => ( {
     type: 'INITIALIZE_SESSION',
 } );
 
+const sessionReducer = ( state = false, action ) => {
+    switch ( action.type ) {
+        case 'INITIALIZE_SESSION':
+            return true;
+        default: return state;
+    }
+};
+
+export const storeFilter = ( data ) => ( {
+    type: 'SET_FILTER',
+    data,
+} );
+
 const storeData = ( data ) => ( {
     type: 'STORE_DATA',
     data,
 } );
 
-export const fetchData = ( ) => ( dispatch ) =>
-    fetchItems( ).then( res => dispatch( storeData( res ) ) );
+export const fetchData = ( dispatch, string ) => {
+    fetchItems( string ).then( res => dispatch( storeData( res ) ) );
+}
 
-const sessionReducer = ( state = false, action ) => {
+const filterReducer = ( state = false, action ) => {
     switch ( action.type ) {
-        case 'INITIALIZE_SESSION':
-            return true;
+        case 'SET_FILTER':
+            return action.data;
         default: return state;
     }
 };
@@ -31,8 +45,9 @@ const dataReducer = ( state = [ ], action ) => {
 };
 
 const reducer = combineReducers( {
-    loggedIn: sessionReducer,
+    filter: filterReducer,
     data: dataReducer,
+    loggedIn: sessionReducer,
 } );
 
 export default ( initialState ) =>

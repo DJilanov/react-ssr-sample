@@ -21,3 +21,12 @@
 .text-right {
     text-align: right;
 }
+
+.controlls-container,
+.search-container {
+    display: inline-block;
+}
+
+.search-container {
+    margin-left: 50px;
+}
